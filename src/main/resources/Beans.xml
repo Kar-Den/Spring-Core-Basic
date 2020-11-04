@@ -25,5 +25,10 @@
         <constructor-arg type="int" value="15"/>
     </bean>
 
+    <bean id="newProject" name="taxiBumer, taxiBiber, taxiNet, taxiUvezet" class="beans.Project">
+        <constructor-arg value="taxiBumer"/>
+        <constructor-arg ref="dev"/>
+    </bean>
+
 </beans>
 

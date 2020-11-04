@@ -1,6 +1,7 @@
 package beanDefinition;
 
 import beans.Developer;
+import beans.Project;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -20,5 +21,8 @@ public class ClientCode {
 
         Developer anonymous = context.getBean("anonymous", Developer.class);
         System.out.println(anonymous.toString());
+
+        Project taxiBumer = context.getBean("taxiBumer", Project.class);
+        System.out.println(taxiBumer.toString());
     }
 }
