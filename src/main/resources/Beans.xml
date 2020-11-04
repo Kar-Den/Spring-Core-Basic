@@ -30,5 +30,17 @@
         <constructor-arg ref="dev"/>
     </bean>
 
+    <bean id="teamLead" class="beans.Developer">
+        <constructor-arg value="Alex Shild"/>
+        <constructor-arg value="Java 10"/>
+        <constructor-arg value="100"/>
+        <constructor-arg value="true"/>
+    </bean>
+
+    <bean id="java_10" name="Maybe later" class="beans.Project">
+        <property name="name" value="Java 10. Early Release"/>
+        <property name="teamLead" ref="teamLead"/>
+    </bean>
+
 </beans>
 

@@ -24,5 +24,9 @@ public class ClientCode {
 
         Project taxiBumer = context.getBean("taxiBumer", Project.class);
         System.out.println(taxiBumer.toString());
+
+        Project java_10 = (Project) context.getBean("java_10");
+        System.out.println(java_10.toString());
+
     }
 }

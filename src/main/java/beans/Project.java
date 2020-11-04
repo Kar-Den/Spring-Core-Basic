@@ -9,6 +9,9 @@ public class Project {
         this.teamLead = teamLead;
     }
 
+    public Project() {
+    }
+
     public String getName() {
         return name;
     }
