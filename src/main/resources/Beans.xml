@@ -3,7 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="dev" class="beans.Developer"/>
+    <bean id="dev" class="beans.Developer">
+        <constructor-arg value="Alex"/>
+        <constructor-arg value="Java"/>
+        <constructor-arg value="3"/>
+        <constructor-arg value="true"/>
+    </bean>
 
 </beans>
 
