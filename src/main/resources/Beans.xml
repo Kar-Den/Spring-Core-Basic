@@ -21,5 +21,9 @@
         <constructor-arg value="false"/>
     </bean>
 
+    <bean id="anonymous" class="beans.Developer">
+        <constructor-arg value="15"/>
+    </bean>
+
 </beans>
 

@@ -17,5 +17,8 @@ public class ClientCode {
 
         Developer net = (Developer) context.getBean("dotNetDev");
         System.out.println(net.toString());
+
+        Developer anonymous = context.getBean("anonymous", Developer.class);
+        System.out.println(anonymous.toString());
     }
 }
