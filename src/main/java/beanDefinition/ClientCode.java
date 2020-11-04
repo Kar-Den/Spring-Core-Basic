@@ -11,6 +11,8 @@ public class ClientCode {
         System.out.println(dev.toString());
 
         Developer intern = context.getBean("intern", Developer.class);
+        intern.setLevel(1);
+        intern.setSkill("Kotlin");
         System.out.println(intern.toString());
     }
 }
