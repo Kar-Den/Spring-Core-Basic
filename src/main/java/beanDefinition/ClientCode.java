@@ -9,5 +9,8 @@ public class ClientCode {
         ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
         Developer dev = (Developer) context.getBean("dev");
         System.out.println(dev.toString());
+
+        Developer intern = context.getBean("intern", Developer.class);
+        System.out.println(intern.toString());
     }
 }

@@ -10,5 +10,9 @@
         <constructor-arg value="true"/>
     </bean>
 
+    <bean id="intern" class="beans.Developer">
+        <constructor-arg value="Roman"/>
+    </bean>
+
 </beans>
 
