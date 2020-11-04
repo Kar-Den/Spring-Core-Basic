@@ -22,7 +22,7 @@
     </bean>
 
     <bean id="anonymous" class="beans.Developer">
-        <constructor-arg value="15"/>
+        <constructor-arg type="int" value="15"/>
     </bean>
 
 </beans>
