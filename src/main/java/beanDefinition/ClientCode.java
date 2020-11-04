@@ -14,5 +14,8 @@ public class ClientCode {
         intern.setLevel(1);
         intern.setSkill("Kotlin");
         System.out.println(intern.toString());
+
+        Developer net = (Developer) context.getBean("dotNetDev");
+        System.out.println(net.toString());
     }
 }

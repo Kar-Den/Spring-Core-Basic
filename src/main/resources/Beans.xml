@@ -14,5 +14,12 @@
         <constructor-arg value="Roman"/>
     </bean>
 
+    <bean id="dotNetDev" class="beans.Developer">
+        <constructor-arg value="DotNet"/>
+        <constructor-arg value="Peter"/>
+        <constructor-arg value="2"/>
+        <constructor-arg value="false"/>
+    </bean>
+
 </beans>
 
