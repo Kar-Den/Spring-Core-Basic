@@ -12,6 +12,7 @@ public class Project {
     public Project(String name, List<Object> engineers) {
         this.name = name;
         this.engineers = engineers;
+        System.out.println("I'm from Project constructor");
     }
 
     public String getName() {
