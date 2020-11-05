@@ -33,7 +33,10 @@ public class ClientCode {
         intern.setSkill("Delphi");
         System.out.println(intern.toString());
 
-        Developer scalaDev = (Developer) context.getBean("scalaDev");
+
+        ApplicationContext context2 = new ClassPathXmlApplicationContext("Beans.xml");
+
+        Developer scalaDev = (Developer) context2.getBean("scalaDev");
         System.out.println(scalaDev.toString());
 
         System.out.println(intern==scalaDev);
