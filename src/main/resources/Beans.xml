@@ -3,51 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--    <bean id="dev" class="beans.Developer">-->
-<!--        <constructor-arg value="Alex"/>-->
-<!--        <constructor-arg value="Java"/>-->
-<!--        <constructor-arg value="3"/>-->
-<!--        <constructor-arg value="true"/>-->
-<!--    </bean>-->
-
-<!--    <bean id="intern" class="beans.Developer">-->
-<!--        <constructor-arg value="Roman"/>-->
-<!--    </bean>-->
-
-<!--    <bean id="dotNetDev" class="beans.Developer">-->
-<!--        <constructor-arg index="1" value="DotNet"/>-->
-<!--        <constructor-arg index="0" value="Peter"/>-->
-<!--        <constructor-arg value="2"/>-->
-<!--        <constructor-arg value="false"/>-->
-<!--    </bean>-->
-
-<!--    <bean id="anonymous" class="beans.Developer">-->
-<!--        <constructor-arg type="int" value="15"/>-->
-<!--    </bean>-->
-
-<!--    <bean id="newProject" name="taxiBumer, taxiBiber, taxiNet, taxiUvezet" class="beans.Project">-->
-<!--        <constructor-arg value="taxiBumer"/>-->
-<!--        <constructor-arg ref="dev"/>-->
-<!--    </bean>-->
-
-<!--    <bean id="teamLead" class="beans.Developer">-->
-<!--        <constructor-arg value="Alex Shild"/>-->
-<!--        <constructor-arg value="Java 10"/>-->
-<!--        <constructor-arg value="100"/>-->
-<!--        <constructor-arg value="true"/>-->
-<!--    </bean>-->
-
-<!--    <bean id="java_10" name="Maybe later" class="beans.Project">-->
-<!--        <property name="name" value="Java 10. Early Release"/>-->
-<!--        <property name="teamLead" ref="teamLead"/>-->
-<!--    </bean>-->
-
-<!--    2ая лекция-->
-    <bean id="scalaDev" class="beans.Developer" scope="singleton">
-        <constructor-arg value="Martin Odersky"/>
-        <constructor-arg value="Scala"/>
-        <constructor-arg value="10"/>
-        <constructor-arg value="false"/>
+    <!--    2ая лекция-->
+    <bean id="dev" class="beans.Developer" scope="singleton">
+        <property name="name" value="Petja"/>
+        <property name="skill" value="Java"/>
+        <property name="level" value="2"/>
+        <property name="yearsInFramework">
+            <map>
+                <entry key="String" value="3"/>
+                <entry key="Hibernate" value="2"/>
+                <entry key="Mockito" value="1"/>
+            </map>
+        </property>
     </bean>
 
 </beans>
