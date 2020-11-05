@@ -17,5 +17,24 @@
         </property>
     </bean>
 
+    <bean id="tester" class="beans.AutomationTester">
+        <property name="name" value="Vasja"/>
+        <property name="skill" value="Python"/>
+        <property name="level" value="1"/>
+        <property name="favoriteFramework" value="Django"/>
+        <property name="bro" value="true"/>
+    </bean>
+
+    <bean id="manager" class="beans.Manager">
+        <property name="name" value="Ivan Ivanovich"/>
+        <property name="emailPerHour" value="1000"/>
+        <property name="engineers">
+            <set>
+                <ref bean="dev"/>
+                <ref bean="tester"/>
+            </set>
+        </property>
+    </bean>
+
 </beans>
 
