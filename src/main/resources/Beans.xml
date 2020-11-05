@@ -10,6 +10,8 @@
        http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 
     <!--    2ая лекция-->
+    <bean id="InitBean" class="beanDefinition.InitBean"/>
+
     <bean id="dev" class="beans.Developer">
         <property name="name" value="Petja"/>
         <property name="skill" value="Java"/>
