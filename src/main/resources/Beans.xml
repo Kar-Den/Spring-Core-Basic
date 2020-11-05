@@ -10,7 +10,6 @@
        http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 
     <!--    2ая лекция-->
-    <bean id="InitBean" class="beanDefinition.InitBean"/>
 
     <bean id="dev" class="beans.Developer">
         <property name="name" value="Petja"/>
@@ -60,6 +59,10 @@
             </list>
         </constructor-arg>
     </bean>
+
+    <bean id="InitBean" class="beanDefinition.InitBean"/>
+
+    <bean id="bpp" class="beanDefinition.CustomBPP"/>
 
 </beans>
 
