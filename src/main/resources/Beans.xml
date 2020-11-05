@@ -3,43 +3,51 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="dev" class="beans.Developer">
-        <constructor-arg value="Alex"/>
-        <constructor-arg value="Java"/>
-        <constructor-arg value="3"/>
-        <constructor-arg value="true"/>
-    </bean>
+<!--    <bean id="dev" class="beans.Developer">-->
+<!--        <constructor-arg value="Alex"/>-->
+<!--        <constructor-arg value="Java"/>-->
+<!--        <constructor-arg value="3"/>-->
+<!--        <constructor-arg value="true"/>-->
+<!--    </bean>-->
 
-    <bean id="intern" class="beans.Developer">
-        <constructor-arg value="Roman"/>
-    </bean>
+<!--    <bean id="intern" class="beans.Developer">-->
+<!--        <constructor-arg value="Roman"/>-->
+<!--    </bean>-->
 
-    <bean id="dotNetDev" class="beans.Developer">
-        <constructor-arg index="1" value="DotNet"/>
-        <constructor-arg index="0" value="Peter"/>
-        <constructor-arg value="2"/>
+<!--    <bean id="dotNetDev" class="beans.Developer">-->
+<!--        <constructor-arg index="1" value="DotNet"/>-->
+<!--        <constructor-arg index="0" value="Peter"/>-->
+<!--        <constructor-arg value="2"/>-->
+<!--        <constructor-arg value="false"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="anonymous" class="beans.Developer">-->
+<!--        <constructor-arg type="int" value="15"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="newProject" name="taxiBumer, taxiBiber, taxiNet, taxiUvezet" class="beans.Project">-->
+<!--        <constructor-arg value="taxiBumer"/>-->
+<!--        <constructor-arg ref="dev"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="teamLead" class="beans.Developer">-->
+<!--        <constructor-arg value="Alex Shild"/>-->
+<!--        <constructor-arg value="Java 10"/>-->
+<!--        <constructor-arg value="100"/>-->
+<!--        <constructor-arg value="true"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="java_10" name="Maybe later" class="beans.Project">-->
+<!--        <property name="name" value="Java 10. Early Release"/>-->
+<!--        <property name="teamLead" ref="teamLead"/>-->
+<!--    </bean>-->
+
+<!--    2ая лекция-->
+    <bean id="scalaDev" class="beans.Developer">
+        <constructor-arg value="Martin Odersky"/>
+        <constructor-arg value="Scala"/>
+        <constructor-arg value="10"/>
         <constructor-arg value="false"/>
-    </bean>
-
-    <bean id="anonymous" class="beans.Developer">
-        <constructor-arg type="int" value="15"/>
-    </bean>
-
-    <bean id="newProject" name="taxiBumer, taxiBiber, taxiNet, taxiUvezet" class="beans.Project">
-        <constructor-arg value="taxiBumer"/>
-        <constructor-arg ref="dev"/>
-    </bean>
-
-    <bean id="teamLead" class="beans.Developer">
-        <constructor-arg value="Alex Shild"/>
-        <constructor-arg value="Java 10"/>
-        <constructor-arg value="100"/>
-        <constructor-arg value="true"/>
-    </bean>
-
-    <bean id="java_10" name="Maybe later" class="beans.Project">
-        <property name="name" value="Java 10. Early Release"/>
-        <property name="teamLead" ref="teamLead"/>
     </bean>
 
 </beans>
