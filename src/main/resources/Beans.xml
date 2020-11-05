@@ -43,7 +43,7 @@
 <!--    </bean>-->
 
 <!--    2ая лекция-->
-    <bean id="scalaDev" class="beans.Developer">
+    <bean id="scalaDev" class="beans.Developer" scope="prototype">
         <constructor-arg value="Martin Odersky"/>
         <constructor-arg value="Scala"/>
         <constructor-arg value="10"/>
