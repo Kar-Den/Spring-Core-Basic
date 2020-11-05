@@ -21,7 +21,7 @@ public class ClientCode {
 //        Manager manager = (Manager) context.getBean("manager");
 //        System.out.println(manager.toString());
 
-        Project nyt = context.getBean("NY_Time", Project.class);
+        Project nyt = context.getBean("ny_Time", Project.class);
         System.out.println(nyt.toString());
 
     }

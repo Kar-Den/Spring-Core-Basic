@@ -4,12 +4,12 @@ import java.util.List;
 
 public class Project {
     private String name;
-    private List<Engineer> engineers;
+    private List<Object> engineers;
 
     public Project() {
     }
 
-    public Project(String name, List<Engineer> engineers) {
+    public Project(String name, List<Object> engineers) {
         this.name = name;
         this.engineers = engineers;
     }
@@ -22,11 +22,11 @@ public class Project {
         this.name = name;
     }
 
-    public List<Engineer> getEngineers() {
+    public List<Object> getEngineers() {
         return engineers;
     }
 
-    public void setEngineers(List<Engineer> engineers) {
+    public void setEngineers(List<Object> engineers) {
         this.engineers = engineers;
     }
 

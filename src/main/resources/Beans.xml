@@ -10,13 +10,13 @@
        http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 
     <!--    2ая лекция-->
-    <bean id="dev" class="beans.Developer" scope="singleton">
+    <bean id="dev" class="beans.Developer">
         <property name="name" value="Petja"/>
         <property name="skill" value="Java"/>
         <property name="level" value="2"/>
         <property name="yearsInFramework">
             <map>
-                <entry key="String" value="3"/>
+                <entry key="Spring" value="3"/>
                 <entry key="Hibernate" value="2"/>
                 <entry key="Mockito" value="1"/>
             </map>
@@ -36,9 +36,7 @@
         <property name="emailPerHour">
             <util:constant static-field="java.lang.Math.PI"/>
         </property>
-        <property name="engineers">
-            <ref bean="pool"/>
-        </property>
+        <property name="engineers" ref="pool"/>
     </bean>
 
     <util:set id="pool" set-class="java.util.HashSet">
@@ -50,7 +48,7 @@
     называется именно initProject и не ожидает там увидеть никакие параммтры. Т.е. генирируется
     сигнатура. Никакого способа задать парамметры здесь нет. Если будет метод с параметрами,
     то он его не найдет-->
-    <bean id="NY_Time" class="beans.Project" init-method="initProject">
+    <bean id="ny_Time" class="beans.Project" init-method="initProject">
         <constructor-arg value="Backend for NYT"/>
         <constructor-arg>
             <list>

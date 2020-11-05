@@ -5,7 +5,7 @@ import java.util.Set;
 public class Manager {
     private String name;
     private int emailPerHour;
-    private Set<Engineer> engineers;
+    private Set<Object> engineers;
 
     public Manager() {
     }
@@ -26,11 +26,11 @@ public class Manager {
         this.emailPerHour = emailPerHour;
     }
 
-    public Set<Engineer> getEngineers() {
+    public Set<Object> getEngineers() {
         return engineers;
     }
 
-    public void setEngineers(Set<Engineer> engineers) {
+    public void setEngineers(Set<Object> engineers) {
         this.engineers = engineers;
     }
 
