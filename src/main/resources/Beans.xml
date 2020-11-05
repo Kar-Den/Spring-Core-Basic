@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:util="http://www.springframework.org/schema/util"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 
     <!--    2ая лекция-->
     <bean id="dev" class="beans.Developer" scope="singleton">
@@ -29,12 +35,14 @@
         <property name="name" value="Ivan Ivanovich"/>
         <property name="emailPerHour" value="1000"/>
         <property name="engineers">
-            <set>
-                <ref bean="dev"/>
-                <ref bean="tester"/>
-            </set>
+            <ref bean="pool"/>
         </property>
     </bean>
+
+    <util:set id="pool" set-class="java.util.HashSet">
+        <ref bean="tester"/>
+        <ref bean="dev"/>
+    </util:set>
 
 </beans>
 
