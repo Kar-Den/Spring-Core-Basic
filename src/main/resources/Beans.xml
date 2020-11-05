@@ -33,7 +33,9 @@
 
     <bean id="manager" class="beans.Manager">
         <property name="name" value="Ivan Ivanovich"/>
-        <property name="emailPerHour" value="1000"/>
+        <property name="emailPerHour">
+            <util:constant static-field="java.lang.Math.PI"/>
+        </property>
         <property name="engineers">
             <ref bean="pool"/>
         </property>
