@@ -1,15 +1,17 @@
 package beans;
 
+import java.util.List;
+
 public class Project {
     private String name;
-    private Developer teamLead;
-
-    public Project(String name, Developer teamLead) {
-        this.name = name;
-        this.teamLead = teamLead;
-    }
+    private List<Engineer> engineers;
 
     public Project() {
+    }
+
+    public Project(String name, List<Engineer> engineers) {
+        this.name = name;
+        this.engineers = engineers;
     }
 
     public String getName() {
@@ -20,19 +22,24 @@ public class Project {
         this.name = name;
     }
 
-    public Developer getTeamLead() {
-        return teamLead;
+    public List<Engineer> getEngineers() {
+        return engineers;
     }
 
-    public void setTeamLead(Developer teamLead) {
-        this.teamLead = teamLead;
+    public void setEngineers(List<Engineer> engineers) {
+        this.engineers = engineers;
     }
 
     @Override
     public String toString() {
         return "Project{" +
                 "name='" + name + '\'' +
-                ", teamLead=" + teamLead +
+                ", engineers=" + engineers +
                 '}';
+    }
+
+    public void initProject(){
+        System.out.println("Check budget for " + engineers.size() + " engineers");
+        System.out.println("Check staging");
     }
 }

@@ -46,5 +46,20 @@
         <ref bean="dev"/>
     </util:set>
 
+    <!--    init-method пытается найти в классе Project метод, который возвращает тип void
+    называется именно initProject и не ожидает там увидеть никакие параммтры. Т.е. генирируется
+    сигнатура. Никакого способа задать парамметры здесь нет. Если будет метод с параметрами,
+    то он его не найдет-->
+    <bean id="NY_Time" class="beans.Project" init-method="initProject">
+        <constructor-arg value="Backend for NYT"/>
+        <constructor-arg>
+            <list>
+                <ref bean="dev"/>
+                <ref bean="tester"/>
+                <ref bean="manager"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
 </beans>
 
