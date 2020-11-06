@@ -34,8 +34,7 @@
 
     <bean id="manager" class="beans.Manager">
         <property name="name" value="Ivan Ivanovich"/>
-        <property name="emailPerHour">
-            <util:constant static-field="java.lang.Math.PI"/>
+        <property name="emailPerHour" value="100">
         </property>
         <property name="engineers" ref="pool"/>
     </bean>
@@ -60,7 +59,7 @@
         </constructor-arg>
     </bean>
 
-    <bean id="InitBean" class="beanDefinition.InitBean"/>
+<!--    <bean id="InitBean" class="beanDefinition.InitBean"/>-->
 
     <bean id="bpp" class="beanDefinition.CustomBPP"/>
 
