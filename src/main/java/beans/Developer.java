@@ -33,4 +33,8 @@ public class Developer extends Engineer {
                 ", isCoffeeConsumer=" + isCoffeeConsumer +
                 "} " + super.toString();
     }
+
+    public void destroyMe(){
+        System.out.println("Developer was destroyed");
+    }
 }

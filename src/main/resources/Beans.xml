@@ -11,7 +11,7 @@
 
     <!--    2ая лекция-->
 
-    <bean id="dev" class="beans.Developer">
+    <bean id="dev" class="beans.Developer" destroy-method="destroyMe">
         <property name="name" value="Petja"/>
         <property name="skill" value="Java"/>
         <property name="level" value="2"/>
@@ -61,8 +61,10 @@
 
 <!--    <bean id="InitBean" class="beanDefinition.InitBean"/>-->
 
-    <bean id="bpp" class="beanDefinition.CustomBPP"/>
-    <bean id="bpp2" class="beanDefinition.CustomBPP2"/>
+<!--    <bean id="bpp" class="beanDefinition.CustomBPP"/>-->
+<!--    <bean id="bpp2" class="beanDefinition.CustomBPP2"/>-->
+
+    <bean id="destroy" class="beanDefinition.DestroyBean"/>
 
 </beans>
 

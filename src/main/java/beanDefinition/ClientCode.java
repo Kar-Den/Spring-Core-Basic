@@ -5,6 +5,7 @@ import beans.Developer;
 import beans.Manager;
 import beans.Project;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class ClientCode {
@@ -23,6 +24,8 @@ public class ClientCode {
 
         Project nyt = context.getBean("ny_Time", Project.class);
         System.out.println(nyt.toString());
+
+        ((AbstractApplicationContext)context).close();
 
     }
 }
