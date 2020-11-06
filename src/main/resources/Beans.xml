@@ -62,6 +62,7 @@
 <!--    <bean id="InitBean" class="beanDefinition.InitBean"/>-->
 
     <bean id="bpp" class="beanDefinition.CustomBPP"/>
+    <bean id="bpp2" class="beanDefinition.CustomBPP2"/>
 
 </beans>
 
